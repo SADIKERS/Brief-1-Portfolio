@@ -28,28 +28,30 @@
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="a-propos.html">À propos</a></li>
                     <li><a href="projets.html">Projets</a></li>
-                    <li><a href="contact.html">Cantact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <!---=====-===========mon parcour section======================-->
-        <div class="conteneur">
-            <h1>À propos de moi</h1>
-            <p>Découvrez mon parcours, mes compétences et mes objectifs.</p>
-        </div>
+        <section class="about-intro">
+            <div class="conteneur">
+                <h1>À propos de moi</h1>
+                <p>Découvrez mon parcours, mes compétences et mes objectifs.</p>
+            </div>
+        </section>
         <section class="parcours">
             <div class="conteneur">
-                <div class="parcours__conteneur">
-                    <img class="parcours__photo" href="images/avatar.svg" alt="Portrait d’Abdelilah Sadik" width="280"
+                <div class="parcours__contenu">
+                    <img class="parcours__photo" src="photo link" alt="Portrait d’Abdelilah Sadik" width="280"
                         height="280">
-                    <div class="parcours_text">
+                    <div class="parcours__texte">
                         <div class="parcours__titre">
                             <h2>
-                                <spam class="parcours__icons">
+                                <span class="parcours__icons">
                                     <img src="../images/Icône utilisateur bleue minimaliste.png" alt="">
-                                </spam> mon parcours
+                                </span> mon parcours
 
                             </h2>
                         </div>
@@ -65,14 +67,14 @@
         </section>
         <!--======================mes competence section=========================-->
         <section class="competence">
-            <dev class="conteneur">
-                <dev class="competence__titre">
+            <div class="conteneur">
+                <div class="competence__titre">
                     <span>
                         <img src="../images/Icône_de_code_bleu_vif-removebg-preview.png" alt="">
                     </span>
                     <h2>Mes compétences</h2>
-                    <p>Voici les technologies et outils que j’utiliseet que je continue d’apprendre.</p>
-                </dev>
+                    <p>Voici les technologies et outils que j’utilise et que je continue d’apprendre.</p>
+                </div>
                 <ul class="competence_list">
                     <li>
                         <img src="../images/1175193-removebg-preview.png" alt="HTML">
@@ -85,6 +87,9 @@
                             alt="Java script">
                     </li>
                     <li>
+                        <img src="../images/87-877926_git-git-icon-removebg-preview.png" alt="Git">
+                    </li>
+                    <li>
                         <img src="../images/240-2409409_c-programming-icon-c-programming-language-icon-removebg-preview.png"
                             alt="C">
                     </li>
@@ -94,19 +99,18 @@
                     <li>
                         <img src="../images/ccaa09637389a530ddffc288a41b0895-removebg-preview.png" alt="GitHub">
                     </li>
-                    <li>
-                        <img src="../images/87-877926_git-git-icon-removebg-preview.png" alt="Git">
-                    </li>
                 </ul>
-            </dev>
+            </div>
         </section>
         <!--=============objectif section===========================-->
         <section class="objectif">
             <div class="conteneur">
-                <span>
-                    <img src="../images/Cible bleue avec flèche centrale.png">
-                </span>
-                <h2>Mes objectifs professionnels</h2>
+                <div class="objectif__titre">
+                    <span class="objectif__icon">
+                        <img src="../images/Cible bleue avec flèche centrale.png" alt="">
+                    </span>
+                    <h2>Mes objectifs professionnels</h2>
+                </div>
                 <p>
                     Mon objectif est de devenir un développeur capable de concevoir
                     des applications web modernes, utiles et performantes.
@@ -119,32 +123,33 @@
                 </p>
             </div>
         </section>
-        </div>
     </main>
+    <!--============================ footer section ==============================-->
     <footer class="pied">
 
-    <div class="conteneur">
+        <div class="conteneur">
 
-        <div class="footer__contenu">
+            <div class="footer__contenu">
 
-            <div>
-                <p>Abdelilah Sadik</p>
-                <p>Développeur web | Futur AI Engineer</p>
+                <div>
+                    <p>Abdelilah Sadik</p>
+                    <p>Développeur web | Futur AI Engineer</p>
+                </div>
+                <ul class="reseaux">
+                    <li><a href="#" aria-label="LinkedIn">
+                            <img src="../images/7136971-removebg-preview.png" alt="">
+                        </a></li>
+                    <li><a href="#" aria-label="GitHub">
+                            <img src="../images/ccaa09637389a530ddffc288a41b0895-removebg-preview.png" alt="">
+                        </a></li>
+                    <li><a href="#" aria-label="X">
+                            <img src="../images/da9cc1f2e152683ddba2240817404977-removebg-preview.png" alt="">
+                        </a></li>
+
+                </ul>
             </div>
-            <ul class="resaux">
-                <li><a href="#" aria-label="LinkedIn">
-                    <img src="../images/7136971-removebg-preview.png" alt="">
-                </a></li>
-                <li><a href="#" aria-label="GitHub">
-                    <img src="../images/ccaa09637389a530ddffc288a41b0895-removebg-preview.png" alt="">
-                </a></li>
-                <li><a href="#" aria-label="X">
-                    <img src="../images/da9cc1f2e152683ddba2240817404977-removebg-preview.png" alt="">
-                </a></li>
 
-            </ul>
         </div>
-
-    </div>
-</footer>
+    </footer>
 </body>
+</html>
