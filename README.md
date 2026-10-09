@@ -73,5 +73,3 @@ BRIEF-1-PORTFOLIO/
 - Conception d'interfaces responsive et accessibles.
 - Intégration d'une maquette Figma en HTML et CSS.
 - Utilisation de Git et GitHub pour gérer un projet web.
-
-
