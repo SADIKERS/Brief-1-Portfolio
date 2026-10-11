@@ -1,76 +1,64 @@
-
-/* =========================================
+/* =================================
    1. VARIABLES
-========================================= */
+   ================================= */
 
 :root {
-    --couleur-fond: #101d27;
-    --couleur-fond-clair: #20252f;
-    --couleur-carte: rgba(20, 35, 47, 0.82);
-    --couleur-texte: #f5f7fa;
-    --couleur-texte-doux: #c5d2df;
-    --couleur-principale: #00e5f2;
-    --couleur-bordure: #244454;
+    --couleur-fond: #0d1b26;
+    --couleur-fond-carte: #102330;
+    --couleur-texte: #f5f7fb;
+    --couleur-texte-doux: #c5d3e2;
+    --couleur-principale: #00d9e8;
+    --couleur-bordure: #214151;
 
     --police: "Inter", Arial, sans-serif;
 
-    --largeur-max: 1440px;
+    --largeur-max: 1300px;
     --rayon: 14px;
 }
 
-
-/* =========================================
-   2. RESET AND GLOBAL STYLES
-========================================= 
-
-*{
+/* =================================
+   2. BASE STYLES
+   ================================= */
+* {
     box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
     font-family: var(--police);
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.4;
     color: var(--couleur-texte);
     background-color: var(--couleur-fond);
 }
 
 h1,
 h2,
-h3,
-p {
-    margin-top: 0;
-}
-
-h1,
-h2,
 h3 {
+    margin: 0;
     line-height: 1.2;
+
 }
 
 p {
-    margin-bottom: 0;
+    margin: 0
 }
 
 ul {
     margin: 0;
     padding: 0;
-    list-style: none;
-}
-
-img {
-    display: block;
-    max-width: 100%;
+    list-style: nom;
 }
 
 a {
     color: inherit;
     text-decoration: none;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 button,
@@ -79,137 +67,21 @@ textarea {
     font: inherit;
 }
 
-button,
-a {
-    -webkit-tap-highlight-color: transparent;
-}
-
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-textarea:focus-visible {
-    outline: 3px solid var(--couleur-principale);
-    outline-offset: 4px;
-}
-
-
-/* =========================================
-   3. SHARED CONTAINER
-========================================= */
-
 .conteneur {
     width: 100%;
     max-width: var(--largeur-max);
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 0 24px;
 }
-
-
-/* =========================================
-   4. HEADER AND NAVIGATION
-========================================= */
-
-.en-tete {
-    position: relative;
-    z-index: 10;
-    border-bottom: 1px solid rgba(197, 210, 223, 0.4);
-    background-color: rgba(16, 29, 39, 0.65);
+/* =================================
+   3. HEADER ET NAVIGATION
+   ================================= */
+.en-tete{
+    border-bottom: 1px solid var(--couleur-bordure)
 }
-
-.en-tete__contenu,
-.en-tete .conteneur {
-    display: flex;
+.en-tete .conteneur{
+    display:flex;
     justify-content: space-between;
     align-items: center;
-    gap: 24px;
-    min-height: 80px;
+    min-height:72px;
 }
-
-.logo {
-    flex-shrink: 0;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.menu a {
-    position: relative;
-    display: inline-block;
-    padding: 8px 0;
-    color: var(--couleur-texte);
-    transition: color 0.2s ease;
-}
-
-.menu a:hover,
-.menu a.active {
-    color: var(--couleur-principale);
-}
-
-.menu a.active::after {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    background-color: var(--couleur-principale);
-    content: "";
-}
-
-
-/* =========================================
-   5. SHARED BUTTONS AND LINKS
-========================================= */
-
-.bouton {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 12px 22px;
-    border: 1px solid transparent;
-    border-radius: 9px;
-    background-color: var(--couleur-principale);
-    color: #071820;
-    font-size: 15px;
-    font-weight: 700;
-    text-align: center;
-    cursor: pointer;
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-.bouton:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(0, 229, 242, 0.2);
-}
-
-.lien {
-    color: var(--couleur-texte);
-    font-weight: 600;
-    transition: color 0.2s ease;
-}
-
-.lien:hover {
-    color: var(--couleur-principale);
-}
-
-
-/* =========================================
-   6. HOME PAGE — HERO
-========================================= */
-
-.hero {
-    display: flex;
-    align-items: center;
-    min-height: 600px;
-    padding: 64px 0;
-    background-color: var(--couleur-fond);
-}
-
-
