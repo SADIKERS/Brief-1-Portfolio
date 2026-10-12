@@ -243,7 +243,7 @@ textarea {
     padding-left: 6px;
     object-fit: cover;
      box-shadow: 10px 0 24px rgba(0, 555, 232, 0.25);
-    border-radius: 24px;
+    border-radius: 50px;
 }
 
 .parcours__texte {
@@ -470,7 +470,7 @@ textarea {
    ================================= */
 /* Introduction */
 
-/*.contact__intro {
+.contact__intro {
     padding: 30px 0 30px;
     text-align: center;
 }
@@ -675,4 +675,4 @@ textarea {
     width: 33px;
     height: 33px;
     object-fit: contain;
-} */
+} 
