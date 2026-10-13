@@ -3,7 +3,7 @@
 Bienvenue sur mon portfolio personnel ! 👋
 
 Ce projet a été réalisé dans le cadre du **Brief 1** de ma formation en développement web chez YouCode. Il présente mon parcours, mes compétences, mes projets et mes objectifs professionnels à travers une interface moderne et responsive.
-https://zidroxe.github.io/Brief-1-Portfolio/
+https://sadikers.github.io/Brief-1-Portfolio
 ## 🎨 Maquette Figma
 
 Vous pouvez consulter le design du portfolio sur Figma :
